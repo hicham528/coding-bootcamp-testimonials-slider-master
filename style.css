@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+:root {
+  --Dark_Blue: hsl(240, 38%, 20%);
+  --Grayish_Blue: hsl(240, 18%, 77%);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40PX;
+}
+.container{
+    display: flex;
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+    padding: 20px;
+}
+.content{
+    display: flex;
+    gap: 30PX;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: url(images/pattern-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 5px 10px var(--Dark_Blue);
+    border-radius: 20px;
+}
+.image_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20PX;
+}
+.image_content img{
+width: 250px;
+height: 250px;
+}
+.text_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30PX;
+}
+.text_content h1{
+    color: var(--Dark_Blue);
+    font-size: 18px;
+}
+.text_content h1 span{
+    color: var(--Grayish_Blue);
+}
+.next_prev_btn{
+    display: flex;
+    background-color: var(--Grayish_Blue);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--Dark_Blue);
+    justify-content: center;
+    align-items: center;
+    gap: 40PX;
+    padding: 5px;
+    width: max-content;
+    height: max-content;
+    width: 100px;
+}
+.next_prev_btn img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+
+    .container{
+        display: flex;
+        width: 90%;
+        height: 100vh;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .content{
+        display: flex;
+        gap: 30PX;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: url(images/pattern-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0px 5px 10px var(--Dark_Blue);
+        border-radius: 20px;
+        flex-direction: column;
+    }
+}
